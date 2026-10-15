@@ -1,0 +1,62 @@
+Compilation réelle : javac -parameters -encoding UTF-8 (15 fichiers Java)
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+Exécution réelle : JUnit Platform Console, découverte des tests du projet
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+Oct 15, 2026 1:20:41 AM org.springframework.context.support.AbstractApplicationContext refresh
+WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'metierImpl' defined in file [/tmp/foundations-155/classes/metier/MetierImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dynamicDao' defined in config.DynamicDaoConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [dao.IDao]: Factory method 'dynamicDao' threw exception; nested exception is java.lang.IllegalArgumentException: Cible DAO inconnue : inconnue
+[TRACE] Implémentation DAO injectée : DaoImpl
+[DAO] DaoImpl : 100.0
+[TRACE] Implémentation DAO injectée : DaoImpl
+[DAO] DaoImpl : 100.0
+[TRACE] Implémentation DAO injectée : DaoImpl2
+[DAO] DaoImpl2 : 150.0
+Oct 15, 2026 1:20:41 AM org.springframework.context.support.AbstractApplicationContext refresh
+WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'metierImpl' defined in file [/tmp/foundations-155/classes/metier/MetierImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'dao.IDao' available: expected single matching bean but found 4: daoApi,daoFile,dao,dao2
+[TRACE] Implémentation DAO injectée : DaoApi
+[DAO] DaoApi : 220.0
+[TRACE] Implémentation DAO injectée : DaoFile
+[DAO] DaoFile : 180.0
+[TRACE] Implémentation DAO injectée : DaoImpl2
+[DAO] DaoImpl2 : 150.0
+[TRACE] Implémentation DAO injectée : DaoApi
+[DAO] DaoApi : 220.0
+[TRACE] Implémentation DAO injectée : DaoImpl
+[DAO] DaoImpl : 100.0
+[TRACE] Implémentation DAO injectée : DaoImpl
+[DAO] DaoApi : 220.0
+[DAO] DaoFile : 180.0
+[DAO] DaoImpl : 100.0
+[DAO] DaoImpl2 : 150.0
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+╷
+├─ JUnit Jupiter ✔
+│  └─ OcpSelectionTest ✔
+│     ├─ cibleInconnueRefusee() ✔
+│     ├─ primary() ✔
+│     ├─ profils() ✔
+│     ├─ ambiguiteSansStrategie() ✔
+│     ├─ alias() ✔
+│     ├─ dynamiqueFichier() ✔
+│     ├─ dynamiqueDao2() ✔
+│     ├─ dynamiqueApi() ✔
+│     ├─ dynamiqueDao() ✔
+│     └─ agregationSansDoublerAlias() ✔
+├─ JUnit Vintage ✔
+└─ JUnit Platform Suite ✔
+
+Test run finished after 1789 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[        10 tests found           ]
+[         0 tests skipped         ]
+[        10 tests started         ]
+[         0 tests aborted         ]
+[        10 tests successful      ]
+[         0 tests failed          ]
+

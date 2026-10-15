@@ -1,0 +1,26 @@
+Compilation réelle : javac -parameters -encoding UTF-8 (15 fichiers Java)
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+
+$ java Main primary
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+[TRACE] Implémentation DAO injectée : DaoImpl
+[DAO] DaoImpl : 100.0
+Stratégie primary — Résultat final : 200.0
+
+$ java Main alias
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+[TRACE] Implémentation DAO injectée : DaoApi
+[DAO] DaoApi : 220.0
+Stratégie alias — Résultat final : 440.0
+
+$ java Main dynamic
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+[TRACE] Implémentation DAO injectée : DaoImpl2
+[DAO] DaoImpl2 : 150.0
+Stratégie dynamic — Résultat final : 300.0
+
+$ java Main prod
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m -XX:MaxMetaspaceSize=160m -Duser.timezone=UTC
+[TRACE] Implémentation DAO injectée : DaoImpl
+[DAO] DaoImpl : 100.0
+Stratégie prod — Résultat final : 200.0
